@@ -25,6 +25,12 @@ describe("", function(){
       thermostat.decreaseTemperature(thermostat.temperatureIncrement);
       expect(thermostat.temperature).toEqual(19);
     });
+
+    it("will not go below 10 degrees", function(){
+      thermostat.decreaseTemperature(11);
+      expect(thermostat.temperature).toEqual(10);
+    });
+
   });
 
 });

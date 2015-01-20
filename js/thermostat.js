@@ -2,6 +2,7 @@ var Thermostat = function() {
 
   this.temperature = 20;
   this.temperatureIncrement = 1;
+  this.temperatureMinimum = 10;
 
 };
 
@@ -10,5 +11,10 @@ Thermostat.prototype.increaseTemperature = function(changeTempBy) {
 };
 
 Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
-  return this.temperature -= changeTempBy;
+  if ((20 - changeTempBy) < 10) {
+    return 10;
+  }
+  else {
+   return 20 -= changeTempBy; 
+  }
 };
