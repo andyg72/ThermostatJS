@@ -39,13 +39,26 @@ describe("", function(){
       expect(thermostat.powerSavingMode).toEqual(true);
     });
 
+    it("when switched off maximum should be 32 and power saving mode status should be false", function(){
+      thermostat.powerSavingModeSwitch();
+      expect(thermostat.temperatureMaximum).toEqual(32);
+      expect(thermostat.powerSavingMode).toEqual(false);
+    });
+
+    it("when swithced on maximum temperature should be 25 and power saving mode status should be true", function(){
+      thermostat.powerSavingModeSwitch();
+      thermostat.powerSavingModeSwitch();
+      expect(thermostat.temperatureMaximum).toEqual(25);
+      expect(thermostat.powerSavingMode).toEqual(true);
+    });
+
     it("when on should limit the maximum temperature to 25 degrees", function() {
       thermostat.increaseTemperature(6);
       expect(thermostat.temperature).toEqual(25);
     });
 
     it("when off should limit the maximum temperature to 32 degrees", function() {
-      thermostat.powerSavingModeSwitchOff();
+      thermostat.powerSavingModeSwitch();// depende
       thermostat.increaseTemperature(13);
       expect(thermostat.temperature).toEqual(32);
     });
