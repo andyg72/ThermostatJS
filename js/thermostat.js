@@ -25,3 +25,7 @@ Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
     this.temperature -= changeTempBy;
   }
 };
+
+Thermostat.prototype.powerSavingModeSwitchOff = function() {
+  this.powerSavingMode = false;
+};

@@ -44,6 +44,12 @@ describe("", function(){
       expect(thermostat.temperature).toEqual(25);
     });
 
+    it("when off should limit the maximum temperature to 32 degrees", function() {
+      thermostat.powerSavingModeSwitchOff;
+      thermostat.increaseTemperature(13);
+      expect(thermostat.temperature).toEqual(32);
+    });
+
   });
 
 });
