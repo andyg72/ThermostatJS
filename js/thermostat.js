@@ -3,12 +3,18 @@ var Thermostat = function() {
   this.temperature = 20;
   this.temperatureIncrement = 1;
   this.temperatureMinimum = 10;
+  this.temperatureMaximumPSM = 25;
   this.powerSavingMode = true;
 
 };
 
 Thermostat.prototype.increaseTemperature = function(changeTempBy) {
-  return this.temperature += changeTempBy;
+  if (this.temperature + changeTempBy > this.temperatureMaximumPSM) {
+    this.temperature = this.temperatureMaximumPSM
+  }
+  else {
+    this.temperature += changeTempBy;
+  }
 };
 
 Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
