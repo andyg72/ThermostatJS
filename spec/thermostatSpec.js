@@ -33,4 +33,17 @@ describe("", function(){
 
   });
 
+  describe("power saving mode", function() {
+
+    it("should be on by default", function() {
+      expect(thermostat.powerSavingMode).toEqual(true);
+    });
+
+    it("when on should limit the maximum temperature to 25 degrees", function() {
+      thermostat.increaseTemperature(6);
+      expect(thermostat.temperature).toEqual(25);
+    });
+
+  });
+
 });
