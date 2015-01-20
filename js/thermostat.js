@@ -1,6 +1,7 @@
 var Thermostat = function() {
 
   this.temperature = 20;
+  this.temperatureIncrement = 1;
 
 };
 
