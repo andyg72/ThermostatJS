@@ -52,4 +52,14 @@ describe("", function(){
 
   });
 
+  describe("reset button", function() {
+
+    it("when pressed resets the thermostat temperature to 20", function() {
+      thermostat.increaseTemperature(4);
+      thermostat.pressResetButton();
+      expect(thermostat.temperature).toEqual(20);
+    });
+
+  });
+
 });
