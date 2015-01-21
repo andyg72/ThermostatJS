@@ -3,8 +3,8 @@ var Thermostat = function() {
   this.temperatureDefault = 20;
   this.temperaturePowerSavingModeMaximum = 32;
   this.temperaturePowerSavingModeMinimum = 25;
-  this.defaultColorDisplayGreen = 18
-  this.defaultColorDisplayYellow = 25
+  this.defaultColorDisplayLowEnergyUsage = 18
+  this.defaultColorDisplayMediumEnergUsage = 25
 
 
   this.temperature = this.temperatureDefault;
@@ -49,10 +49,10 @@ Thermostat.prototype.pressResetButton = function() {
 };
 
 Thermostat.prototype.colorCheck = function() {
-  if (this.temperature < this.defaultColorDisplayGreen) {
+  if (this.temperature < this.defaultColorDisplayLowEnergyUsage) {
     return "low energy usage";
   }
-  else if (this.temperature < this.defaultColorDisplayYellow) {
+  else if (this.temperature < this.defaultColorDisplayMediumEnergUsage) {
     return "medium energy usage";
   }
   else {
