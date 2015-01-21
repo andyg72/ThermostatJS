@@ -36,15 +36,10 @@ Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
 
 Thermostat.prototype.powerSavingModeSwitch = function() {
   if (this.powerSavingMode) {
-    this.temperatureMaximum = this.temperaturePowerSavingModeMaximum;
-    this.powerSavingMode = false;
+    this._changeValuesPowerSavingModeOff();
   }
   else {
-    this.temperatureMaximum = this.temperaturePowerSavingModeMinimum;
-    if (this.temperature > this.temperatureMaximum){
-      this.temperature = this.temperatureMaximum;
-    };
-    this.powerSavingMode = true;
+    this._changeValuesPowerSavingModeOn();
   }
 };
 
@@ -63,3 +58,22 @@ Thermostat.prototype.colorCheck = function() {
     this.colorDisplay = "red";
   }
 };
+
+Thermostat.prototype._changeValuesPowerSavingModeOff = function() {
+  this.temperatureMaximum = this.temperaturePowerSavingModeMaximum;
+  this.powerSavingMode = false;
+};
+
+Thermostat.prototype._changeValuesPowerSavingModeOn = function() {
+    this.temperatureMaximum = this.temperaturePowerSavingModeMinimum;
+    this._resetTemperatureWhenPowerSavingModeOn();
+    this.powerSavingMode = true;
+};
+
+Thermostat.prototype._resetTemperatureWhenPowerSavingModeOn = function() {
+  if (this.temperature > this.temperatureMaximum){
+    this.temperature = this.temperatureMaximum;
+  }
+};
+
+
