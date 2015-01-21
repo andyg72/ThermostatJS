@@ -36,16 +36,24 @@ Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
 
 Thermostat.prototype.powerSavingModeSwitch = function() {
   if (this.powerSavingMode) {
-    this.temperatureMaximum = this.temperaturePowerSavingModeMaximum;
-    this.powerSavingMode = false;
+    this.changeValuesPowerSavingModeOff();
   }
   else {
+    this.changeValuesPowerSavingModeOn();
+  }
+};
+
+Thermostat.prototype.changeValuesPowerSavingModeOff = function() {
+  this.temperatureMaximum = this.temperaturePowerSavingModeMaximum;
+  this.powerSavingMode = false;
+};
+
+Thermostat.prototype.changeValuesPowerSavingModeOn = function() {
     this.temperatureMaximum = this.temperaturePowerSavingModeMinimum;
     if (this.temperature > this.temperatureMaximum){
       this.temperature = this.temperatureMaximum;
     };
     this.powerSavingMode = true;
-  }
 };
 
 Thermostat.prototype.pressResetButton = function() {
