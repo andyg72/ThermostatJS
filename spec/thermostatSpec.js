@@ -83,4 +83,26 @@ describe("", function(){
 
   });
 
+  describe("color display", function() {
+
+    it("when temperature is 17 or less then color should be green", function() {
+      thermostat.temperature = 17;
+      thermostat.colorCheck();
+      expect(thermostat.colorDisplay).toEqual("green");
+    });
+
+    it("when temperature is between 18 and 24 color should be yellow", function() {
+      thermostat.temperature = 23;
+      thermostat.colorCheck();
+      expect(thermostat.colorDisplay).toEqual("yellow");
+    });
+
+    it("when temperature is 25 or over then color should be red", function() {
+      thermostat.temperature = 28;
+      thermostat.colorCheck();
+      expect(thermostat.colorDisplay).toEqual("red");
+    });
+
+  });
+
 });

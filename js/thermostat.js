@@ -5,6 +5,7 @@ var Thermostat = function() {
   this.temperatureMinimum = 10;
   this.temperatureMaximum = 25;
   this.powerSavingMode = true;
+  this.colorDisplay = "yellow"
 
 };
 
@@ -42,4 +43,16 @@ Thermostat.prototype.powerSavingModeSwitch = function() {
 
 Thermostat.prototype.pressResetButton = function() {
   this.temperature = 20;
+};
+
+Thermostat.prototype.colorCheck = function() {
+  if (this.temperature < 18) {
+    this.colorDisplay = "green";
+  }
+  else if (this.temperature < 25) {
+    this.colorDisplay = "yellow";
+  }
+  else {
+    this.colorDisplay = "red";
+  }
 };
