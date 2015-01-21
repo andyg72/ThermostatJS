@@ -63,6 +63,14 @@ describe("", function(){
       expect(thermostat.temperature).toEqual(32);
     });
 
+
+    it("when switched on it will reduce temperature to the max temperature if above max temperature", function() {
+      thermostat.powerSavingModeSwitch();
+      thermostat.increaseTemperature(6);
+      thermostat.powerSavingModeSwitch();
+      expect(thermostat.temperature).toEqual(25)
+    });
+
   });
 
   describe("reset button", function() {

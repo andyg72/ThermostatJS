@@ -33,6 +33,9 @@ Thermostat.prototype.powerSavingModeSwitch = function() {
   }
   else {
     this.temperatureMaximum = 25;
+    if (this.temperature > this.temperatureMaximum){
+      this.temperature = this.temperatureMaximum;
+    };
     this.powerSavingMode = true;
   }
 };
