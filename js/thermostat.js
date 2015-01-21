@@ -12,11 +12,11 @@ var Thermostat = function() {
   this.temperatureMinimum = 10;
   this.temperatureMaximum = 25;
   this.powerSavingMode = true;
-  this.colorDisplay = "yellow"
 
 };
 
 Thermostat.prototype.increaseTemperature = function(changeTempBy) {
+  changeTempBy = changeTempBy || this.temperatureIncrement
   if (this.temperature + changeTempBy > this.temperatureMaximum) {
     this.temperature = this.temperatureMaximum;
   }
@@ -26,6 +26,7 @@ Thermostat.prototype.increaseTemperature = function(changeTempBy) {
 };
 
 Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
+  changeTempBy = changeTempBy || this.temperatureIncrement
   if (this.temperature - changeTempBy < this.temperatureMinimum) {
     this.temperature = this.temperatureMinimum;
   }
@@ -49,13 +50,13 @@ Thermostat.prototype.pressResetButton = function() {
 
 Thermostat.prototype.colorCheck = function() {
   if (this.temperature < this.defaultColorDisplayGreen) {
-    this.colorDisplay = "green";
+    return "low energy usage";
   }
   else if (this.temperature < this.defaultColorDisplayYellow) {
-    this.colorDisplay = "yellow";
+    return "medium energy usage";
   }
   else {
-    this.colorDisplay = "red";
+    return "high energy usage";
   }
 };
 
