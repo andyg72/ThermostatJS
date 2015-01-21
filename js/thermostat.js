@@ -26,6 +26,26 @@ Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
   }
 };
 
+// Thermostat.prototype.changeTemperature = function(direction, ChangeTempBy) {
+//   if (direction = 'increase') {
+//     sign = +;
+//     comparator = >;
+//     limit = this.temperatureMaximum;
+//   }
+//   else {
+//     sign = -;
+//     comparator = <;
+//     limit = this.temperatureMimimum;    
+//   }
+//   if (this.temperature sign changeTempBy comparator limit) {
+//     this.temperature = limit;
+//   }
+//   else {
+//     this.temperature sign= changeTempBy;
+//   }
+// };
+
+
 Thermostat.prototype.powerSavingModeSwitch = function() {
   if (this.powerSavingMode) {
     this.temperatureMaximum = 32;
