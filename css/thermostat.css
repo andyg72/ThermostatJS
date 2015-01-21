@@ -16,8 +16,8 @@
   float: left;
 }
 
-.change-temp-up, .power-saving-mode, .change-temp-down {
-  margin-top: 5em;
+.change-temp-up, .power-saving-mode, .change-temp-down, .reset {
+  margin-top: 3em;
   height: 6em;
   width: 100%;
 }
