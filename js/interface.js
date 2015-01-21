@@ -2,30 +2,40 @@ console.log("hello world");
 
 var thermostat = new Thermostat();
 
-var color = 'orange';
+var temperatureColor = 'orange';
+var powerSavingModeColor = 'green';
 
-var evaluateColor = function() {
+var evaluateTemperatureColor = function() {
   switch(thermostat.colorCheck()) {
     case 'low energy usage':
-      color = 'green';
+      temperatureColor = 'green';
       break;
     case 'high energy usage':
-      color =  'red';
+      temperatureColor =  'red';
       break;
     default:
-      color = 'orange';
+      temperatureColor = 'orange';
+  }
+};
+
+var evaluatePowerSavingModeColor = function() {
+  if (thermostat.powerSavingMode) {
+    powerSavingModeColor = 'green';
+  }
+  else {
+    powerSavingModeColor = 'red';
   }
 };
 
 var updateTemperature = function() {
-  evaluateColor();
-  console.log(color);
-  $('.temperature-display').css('color', color);
+  evaluateTemperatureColor();
+  $('.temperature-display').css('color', temperatureColor);
   $('.temperature').text(thermostat.temperature);
 };
 
 $(document).ready(function() {
   $('.temperature').text(thermostat.temperature);
+  $('.power-saving-mode').css('border-color', powerSavingModeColor);
 
   $('.change-temp-up').on('click', function() {
     thermostat.increaseTemperature();
@@ -44,6 +54,8 @@ $(document).ready(function() {
 
   $('.power-saving-mode').on('click', function() {
     thermostat.powerSavingModeSwitch();
+    evaluatePowerSavingModeColor();
+    $('.power-saving-mode').css('border-color', powerSavingModeColor);
     updateTemperature();
   });
 
