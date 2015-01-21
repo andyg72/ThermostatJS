@@ -2,8 +2,25 @@ console.log("hello world");
 
 var thermostat = new Thermostat();
 
+var color = 'orange';
+
+var evaluateColor = function() {
+  switch(thermostat.colorCheck()) {
+    case 'low energy usage':
+      color = 'green';
+      break;
+    case 'high energy usage':
+      color =  'red';
+      break;
+    default:
+      color = 'orange';
+  }
+};
+
 var updateTemperature = function() {
-  $('.temperature-display').css('color', 'red');
+  evaluateColor();
+  console.log(color);
+  $('.temperature-display').css('color', color);
   $('.temperature').text(thermostat.temperature);
 };
 
