@@ -37,22 +37,26 @@ $(document).ready(function() {
   $('#temperature').text(thermostat.temperature);
   $('.power-saving-mode').css('border-color', powerSavingModeColor);
 
-  $('.change-temp-up').on('click', function() {
+  $('.change-temp-up').on('click', function(event) {
+    event.preventDefault();
     thermostat.increaseTemperature();
     updateTemperature();
   });
 
-  $('.change-temp-down').on('click', function() {
+  $('.change-temp-down').on('click', function(event) {
+    event.preventDefault();
     thermostat.decreaseTemperature();
     updateTemperature();
   });
 
-  $('.reset').on('click', function() {
+  $('.reset').on('click', function(event) {
+    event.preventDefault();
     thermostat.pressResetButton();
     updateTemperature();
   });
 
-  $('.power-saving-mode').on('click', function() {
+  $('.power-saving-mode').on('click', function(event) {
+    event.preventDefault();
     thermostat.powerSavingModeSwitch();
     evaluatePowerSavingModeColor();
     $('.power-saving-mode').css('border-color', powerSavingModeColor);
