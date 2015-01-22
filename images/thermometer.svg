@@ -1,1 +1,19 @@
-<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 96 96" height="96px" version="1.1" viewBox="0 0 96 96" width="96px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Dibujo"><g><path d="M50,58.424V30c0-1.104-0.896-2-2-2c-1.105,0-2,0.896-2,2v28.424c-1.763,0.773-3,2.531-3,4.576c0,2.757,2.243,5,5,5    c2.757,0,5-2.243,5-5C53,60.955,51.763,59.197,50,58.424z M48,64c-0.552,0-1-0.448-1-1s0.448-1,1-1c0.552,0,1,0.448,1,1    S48.552,64,48,64z"/><path d="M56.009,55.459L56,30c0-4.411-3.589-8-8-8c-4.411,0-8,3.589-8,7.999l-0.01,25.46C38.08,57.492,37,60.192,37,63    c0,6.065,4.935,11,11,11c6.065,0,11-4.935,11-11C59,60.191,57.92,57.491,56.009,55.459z M48,70c-3.859,0-7-3.141-7-7    c0-1.984,0.848-3.885,2.327-5.213c0.422-0.38,0.663-0.92,0.663-1.487L44,30c0-2.206,1.794-4,4-4c2.206,0,4,1.794,4,4.001    L52.009,56.3c0,0.567,0.241,1.108,0.664,1.487C54.151,59.115,55,61.015,55,63C55,66.859,51.859,70,48,70z"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="49.333px" height="272.666px" viewBox="0 0 49.333 272.666" enable-background="new 0 0 49.333 272.666"
+   xml:space="preserve">
+<rect x="-603.896" y="453.566" fill="none" width="773.962" height="320.984"/>
+<text transform="matrix(1 0 0 1 -603.8965 593.5078)"><tspan x="0" y="0" font-family="'HelveticaNeue-Bold'" font-size="196" letter-spacing="-10">d</tspan><tspan x="108.778" y="0" font-family="'HelveticaNeue-Bold'" font-size="196" letter-spacing="-7">e</tspan><tspan x="213.44" y="0" font-family="'HelveticaNeue-Bold'" font-size="196" letter-spacing="-16">g</tspan><tspan x="316.535" y="0" font-family="'HelveticaNeue-Bold'" font-size="196" letter-spacing="-7">r</tspan><tspan x="385.33" y="0" font-family="'HelveticaNeue-Bold'" font-size="196" letter-spacing="-7">ee</tspan><tspan x="594.654" y="0" font-family="'HelveticaNeue-Bold'" font-size="196">s</tspan></text>
+<g>
+  <path fill="#FFFFFF" d="M14,11.28v215.797c-8,4.021-13.205,12.22-13.205,21.189c0,13.086,10.567,23.732,23.654,23.732
+    c13.086,0,23.946-10.646,23.946-23.732c0-8.76-5.396-16.875-12.396-20.968V11.28c0-6.012-4.988-10.903-11-10.903S14,5.269,14,11.28
+    z M32,11.28v218.112l1.026,0.455c7.079,3.36,11.687,10.589,11.687,18.419c0,11.236-9.123,20.378-20.359,20.378
+    c-11.237,0-20.371-9.142-20.371-20.378c0-8.017,4.717-15.317,12.041-18.6L17,229.222V222h11v-3H17v-4h8v-2h-8v-5h8v-1h-8v-6h8v-1
+    h-8v-5h8v-2h-8v-3h11v-4H17v-4h8v-1h-8v-6h8v-1h-8v-5h8v-2h-8v-5h8v-2h-8v-4h11v-3H17v-4h8v-2h-8v-5h8v-1h-8v-6h8v-1h-8v-5h8v-2h-8
+    v-4h11v-3H17v-4h8v-2h-8v-5h8v-1h-8v-5h8v-2h-8v-5h8v-2h-8v-4h11v-3H17v-4h8v-2h-8v-4h8v-3h-8v-4h8v-2h-8v-5h8v-2h-8v-4h11v-3H17
+    v-4h8v-2h-8v-5h8v-1h-8v-6h8v-1h-8v-5h8v-2h-8v-3h11v-4H17v-9.72c0-4.163,3.338-7.549,7.5-7.549S32,7.117,32,11.28z"/>
+  <circle fill="#FFFFFF" cx="24.369" cy="248.267" r="15.072"/>
+</g>
+</svg>
