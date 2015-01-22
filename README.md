@@ -30,3 +30,4 @@ Most issues came with the CSS as we tried to match a design created by the coach
 What we would do to improve it;
   - work on a slightly neater way of applying CSS colour styling that is based on temperature and power saving mode status.
 
+Front end file to run is thermostat.html (previous versions index.html, thermostat.css & thermostat2.css retained for reference as to how we tackled certain, abandoned design ideas).
