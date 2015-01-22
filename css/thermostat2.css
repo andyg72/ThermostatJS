@@ -7,3 +7,20 @@
 
 }
 
+.row-1 {
+/*  height: 30em;*/
+}
+
+.col-6 {
+  height: 30em;
+  position: relative;
+
+}
+
+.temperature {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 15em;
+}
+
