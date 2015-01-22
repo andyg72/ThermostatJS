@@ -5,6 +5,7 @@
           box-sizing: border-box;
       height: 100%;
       width: 100%;
+      font-family: "Helvetica Neue";
 }
 /*-- our cleafix hack -- */
 .row:before,
