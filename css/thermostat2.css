@@ -1,0 +1,9 @@
+@import url('normalize.css');
+@import url('grid.css');
+
+
+.left-hand-container {
+  width: 60%;
+
+}
+

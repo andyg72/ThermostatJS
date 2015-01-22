@@ -1,9 +1,17 @@
+@import url('normalize.css');
+@import url('grid.css');
+
+
+.container {
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+}
+
+
 .thermostat {
   font-family: Verdana;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
 }
 
 .temperature-display {
