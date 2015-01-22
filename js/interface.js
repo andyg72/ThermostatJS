@@ -7,35 +7,35 @@ var powerSavingModeColor = 'green';
 
 var evaluateTemperatureColor = function() {
   switch(thermostat.colorCheck()) {
-    case 'low energy usage':
-      temperatureColor = 'green';
+    case 'low-energy-usage':
+      return'green';
       break;
-    case 'high energy usage':
-      temperatureColor =  'red';
+    case 'high-energy-usage':
+      return  'red';
       break;
     default:
-      temperatureColor = 'orange';
+      return 'orange';
   }
 };
 
 var evaluatePowerSavingModeColor = function() {
   if (thermostat.powerSavingMode) {
-    powerSavingModeColor = 'green';
+    return 'green';
   }
   else {
-    powerSavingModeColor = 'red';
+    return 'red';
   }
 };
 
 var updateTemperature = function() {
-  evaluateTemperatureColor();
-  $('.temperature-display').css('color', temperatureColor);
+  $('#temperature').css('color', evaluateTemperatureColor());
   $('#temperature').text(thermostat.temperature);
 };
 
-$(document).ready(function() {
+  $(document).ready(function() {
   $('#temperature').text(thermostat.temperature);
-  $('.power-saving-mode').css('border-color', powerSavingModeColor);
+  $('#temperature').css('color', evaluateTemperatureColor())
+  $('h2').css('background-color', evaluatePowerSavingModeColor());
 
   $('.change-temp-up').on('click', function(event) {
     event.preventDefault();
@@ -58,11 +58,8 @@ $(document).ready(function() {
   $('.power-saving-mode').on('click', function(event) {
     event.preventDefault();
     thermostat.powerSavingModeSwitch();
-    evaluatePowerSavingModeColor();
-    $('.power-saving-mode').css('border-color', powerSavingModeColor);
+    $('h2').css('background-color', evaluatePowerSavingModeColor());
     updateTemperature();
   });
-
-
 
 });

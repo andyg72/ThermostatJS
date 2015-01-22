@@ -1,6 +1,10 @@
 @import url('normalize.css');
 @import url('grid.css');
 
+html, body {
+  height: 100%;
+  font-family: "Helvetica Neue";
+}
 
 #temperature {
 
@@ -28,4 +32,28 @@ h2 {
 .change-temp-up, .change-temp-down {
   padding-left: 0.5em;
   padding-right: 0.5em;
+}
+
+p.degrees {
+  font-size: 12em;
+  color: white;
+  margin: 0 0 0 -0.1em;
+  width: calc(100% + 200px);
+  height: calc(100% - 50px);
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+        -transform: rotate(90deg);
+        text-align: center;
+}
+
+
+span {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }

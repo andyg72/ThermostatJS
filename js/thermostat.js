@@ -50,13 +50,13 @@ Thermostat.prototype.pressResetButton = function() {
 
 Thermostat.prototype.colorCheck = function() {
   if (this.temperature < this.defaultColorDisplayLowEnergyUsage) {
-    return "low energy usage";
+    return "low-energy-usage";
   }
   else if (this.temperature < this.defaultColorDisplayMediumEnergUsage) {
-    return "medium energy usage";
+    return "medium-energy-usage";
   }
   else {
-    return "high energy usage";
+    return "high-energy-usage";
   }
 };
 

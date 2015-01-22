@@ -1,0 +1,53 @@
+@import url('normalize.css');
+@import url('grid.css');
+
+html, body {
+  height: 100%;
+  font-family: "Helvetica Neue";
+}
+
+#temperature {
+  bottom: 0;
+  right: 0;
+  font-size: 10em;
+  padding-top: 30%;
+  margin: 0;
+}
+
+a:hover, a:visited, a:active, a:link {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.change-temp-up, .change-temp-down {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.degrees {
+  bottom: 0;
+  right: 0;
+  font-size: 8em;
+  padding-top: 35%;
+  margin: 0 0 0 -0.1em;
+  color: white;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 2.5em;
+  margin: .4em 0;
+  width: 100%;
+  background-size: 50%;
+}
+
+h2 span {
+  background: #fff;
+  padding: 0 0 1px 16px;
+  position: relative;
+}
