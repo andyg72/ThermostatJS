@@ -30,11 +30,11 @@ var evaluatePowerSavingModeColor = function() {
 var updateTemperature = function() {
   evaluateTemperatureColor();
   $('.temperature-display').css('color', temperatureColor);
-  $('.temperature').text(thermostat.temperature);
+  $('#temperature').text(thermostat.temperature);
 };
 
 $(document).ready(function() {
-  $('.temperature').text(thermostat.temperature);
+  $('#temperature').text(thermostat.temperature);
   $('.power-saving-mode').css('border-color', powerSavingModeColor);
 
   $('.change-temp-up').on('click', function() {

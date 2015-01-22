@@ -3,6 +3,8 @@
      -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+      height: 100%;
+      width: 100%;
 }
 /*-- our cleafix hack -- */
 .row:before,
@@ -20,23 +22,17 @@
     padding: 12px;
 }
 
-.col-1{ width: 16.66%; }
-.col-2{ width: 33.33%; }
-.col-3{ width: 50%;    }
-.col-4{ width: 66.66%; }
-.col-5{ width: 83.33%; }
-.col-6{ width: 100%;   }
+.col-1-7{
+  width: 58.33%;
+  text-align: right;
+}
+.col-8-12{
+  width: 41.67%;
+
+}
 
 .outline, .outline *{
     outline: 1px solid #F6A1A1;
 }
 
 
-/*-- some extra column content styling --*/
-[class*='col-'] > p {
- background-color: #FFC2C2;
- padding: 0;
- margin: 0;
- text-align: center;
- color: white;
-}
