@@ -20,8 +20,10 @@ a:hover, a:visited, a:active, a:link {
 }
 
 p {
-  font-size: 2.5em;
+  font-size: 300%;
   font-weight: bold;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .change-temp-up, .change-temp-down {
@@ -30,17 +32,18 @@ p {
 }
 
 .degrees {
-  bottom: 0;
-  right: 0;
-  font-size: 8em;
-  padding-top: 35%;
-  margin: 0 0 0 -0.1em;
+  font-size: 800%;
+  margin: 35% 0 0 -0.1em;
   color: white;
+}
+
+.degrees-symbol {
+  display: none;
 }
 
 h2 {
   display: inline-block;
-  font-size: 2.5em;
+  font-size: 300%;
   margin: .4em 0;
   width: 100%;
   background-size: 50%;
@@ -53,7 +56,46 @@ h2 span {
 }
 
 img {
-  height: 16.2em;
+  height: 20%;
   margin-left: 6%;
-  margin-top: 3.5%;
+  margin-top: 14%;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .degrees {
+    font-size: 600%;
+    margin-top: 39%;
+  }  
+      
+  img {
+   margin-top: 20%;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .degrees {
+    display: none;
+  }
+
+  .degrees-symbol {
+    display: initial;
+    font-size: 800%;
+    margin: 40% 80% 0 -0.1em;
+    color: white;
+    float:  left;
+  }
+
+  img {
+    height: 15%;
+    float: left;
+    margin-top: 14%;
+  }
+
+  h2 {
+    font-size: 200%;
+  }
+
 }
