@@ -20,10 +20,10 @@ a:hover, a:visited, a:active, a:link {
 }
 
 p {
-  font-size: 300%;
+  font-size: 3em;
   font-weight: bold;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .change-temp-up, .change-temp-down {
@@ -43,7 +43,7 @@ p {
 
 h2 {
   display: inline-block;
-  font-size: 300%;
+  font-size: 3em;
   margin: .4em 0;
   width: 100%;
   background-size: 50%;
@@ -56,9 +56,9 @@ h2 span {
 }
 
 img {
-  height: 20%;
-  margin-left: 6%;
-  margin-top: 14%;
+  height: 13em;
+  margin-left: 2em;
+  margin-top: 4em;
 }
 
 @media screen and (max-width: 1200px) {
@@ -69,7 +69,7 @@ img {
   }  
       
   img {
-   margin-top: 20%;
+   margin-top: 4.5em;
   }
 
 }
@@ -82,20 +82,36 @@ img {
 
   .degrees-symbol {
     display: initial;
-    font-size: 800%;
+    font-size: 8em;
     margin: 40% 80% 0 -0.1em;
     color: white;
     float:  left;
   }
 
   img {
-    height: 15%;
+    height: 13em;
     float: left;
-    margin-top: 14%;
+    margin-top: 0;
   }
 
   h2 {
     font-size: 200%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  p {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  img {
+    height: 9.5em;
   }
 
 }
